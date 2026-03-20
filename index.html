@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Fitness Studio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0e0e0e;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url('/storage/emulated/0/Download/lucid-origin_Ultra-modern_luxury_gym_interior_at_sunset_dramatic_golden_lighting_pouring_thro-0.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0,0,0,0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.btn {
+    background: gold;
+    color: black;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: orange;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+/* IMAGE */
+.section-img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* TRAINER CARD */
+.trainer {
+    margin-top: 20px;
+}
+
+.trainer img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-content">
+        <h1>Elite Fitness Studio</h1>
+        <p>Transform Your Body. Build Your Confidence.</p>
+        <button class="btn" onclick="contact()">Join Now</button>
+    </div>
+</div>
+
+<!-- SERVICES -->
+<section>
+    <h2>Our Classes</h2>
+    <p>High-intensity training, yoga, cardio and more tailored to your goals.</p>
+    <img class="section-img" src="/storage/emulated/0/Download/lucid-origin_high-energy_fitness_class_in_a_modern_luxury_gym_diverse_group_performing_synchr-0.jpg">
+</section>
+
+<!-- TRAINERS -->
+<section>
+    <h2>Meet Our Trainer</h2>
+    <div class="trainer">
+        <img src="/storage/emulated/0/Download/lucid-origin_portrait_of_a_confident_professional_fitness_trainer_standing_in_a_modern_gym_ar-0.jpg">
+        <p>Certified Professional Trainer with years of experience helping clients achieve results.</p>
+    </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section>
+    <h2>Real Results</h2>
+    <p>Our clients don’t just train — they transform.</p>
+    <img class="section-img" src="/storage/emulated/0/Download/lucid-origin_determined_gym_client_mid-workout_lifting_weights_with_visible_effort_and_focus_-0.jpg">
+</section>
+
+<!-- CTA -->
+<section>
+    <h2>Ready to Start?</h2>
+    <p>Join today and take the first step toward your best shape.</p>
+    <button class="btn" onclick="contact()">Contact on WhatsApp</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>Contact: +234 09029637800</p>
+    <p>© 2026 Elite Fitness Studio</p>
+</footer>
+
+<script>
+function contact() {
+    window.open("https://wa.me/2349029637800", "_blank");
+}
+</script>
+
+</body>
+</html>
